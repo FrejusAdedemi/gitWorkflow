@@ -1,7 +1,3 @@
 Contenu initial
-<<<<<<< HEAD
 Modification par feature1
-=======
->>>>>>> 503c5ca (feat: modifications de feature2)
 Modification par feature2
-commit
