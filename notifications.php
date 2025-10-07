@@ -1,0 +1,3 @@
+class Notifications {
+    // Travail en cours...
+}
