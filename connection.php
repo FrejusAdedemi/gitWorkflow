@@ -4,7 +4,14 @@ class Connection {
     private $db = 'database';
     
     public function connect() {
-        // Code de connexion
-        return 'Connected';
+        // BUG CORRIGÉ : ajout de la gestion d'erreur
+        try {
+            $pdo = new PDO("mysql:host={$this->host};dbname={$this->db}");
+            return 'Connected';
+        } catch (PDOException $e) {
+            error_log('Connection error: ' . $e->getMessage());
+            return false;
+        }
     }
 }
+
